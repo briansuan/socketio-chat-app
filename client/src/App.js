@@ -18,7 +18,7 @@ function App() {
    const sendMessage =() => {
     // Socket.io emit
     socket.emit("send_message", { message })
-    appendMessage(message);
+    
   };
 
   // Listen to event using useEffect react hook
@@ -33,7 +33,8 @@ function App() {
 
   function appendMessage(messageReceived) {
     const messageElement = document.createElement('div')
-    messageElement.innerText = messageReceived 
+    messageElement.innerText = messageReceived
+    console.log(messageReceived)
     messageContainer.append(messageElement)
   }
 
