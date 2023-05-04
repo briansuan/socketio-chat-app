@@ -18,7 +18,7 @@ function App() {
    const sendMessage =() => {
     // Socket.io emit
     socket.emit("send_message", { message })
-    
+    appendMessage(message)
   };
 
   // Listen to event using useEffect react hook
