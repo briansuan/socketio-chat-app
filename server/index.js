@@ -29,10 +29,12 @@ io.on("connection", (socket) => {
     console.log('Connected to socket: ' + socket.id);
 
     socket.on("send_message", (data) => {
-        console.log(data);
+        //console.log(data);
         // "data" = data that was sent via the front-end
         // broadcast message to everyone listening on server
+        console.log(data)
         socket.broadcast.emit("receive_message", data);
+        
     });
 });
 

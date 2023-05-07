@@ -11,7 +11,8 @@
   margin: 100px auto;
   position: relative;
   width: 500px;
-  box-shadow: 8px 4px 4px grey;
+  box-shadow: 8px 4px 4px black;
+  overflow: scroll;
 }
 
 .input {
@@ -22,6 +23,7 @@
   resize: none;
   height: 75px;
   border-width: thick;
+  border-color: black;
 }
 
 .send {
@@ -41,5 +43,20 @@
   color:white;
 }
 
+/* .outgoing-msg {
+  float:right;
+  margin-right: 35px;
+  border-style: solid;
+  padding: 10px 10px 10px 10px;
+  border-color: black;
+}
+
+.incoming-msg {
+  float:left;
+  margin-left: 35px;
+  border-style: solid;
+  padding: 10px 10px 10px 10px;
+  border-color: black;
+} */
 
 
